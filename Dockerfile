@@ -2,7 +2,7 @@
 
 FROM nginx:alpine
  
-# Copy your index.html to the default Nginx web directory
+# Copy your index.html to the default Nginx web director
 
 COPY index.html /usr/share/nginx/html/index.html
 
