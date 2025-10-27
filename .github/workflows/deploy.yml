@@ -33,7 +33,7 @@ jobs:
 
     - name: Upload assets to S3 (optional)
       run: |
-        aws s3 cp ./static-assets s3://${{ secrets.S3_BUCKET_NAME }}/ --recursive
+        aws s3 cp . s3://${{ secrets.S3_BUCKET_NAME }}/ --recursive
 
     - name: Deploy to ECS
       run: |
